@@ -15,7 +15,7 @@ class PokemonRepository(private val pokemonDao: PokemonDao,private val pokemonSe
         pokemonDao.insert(pokemon)
     }
 
-    fun getAll():LiveData<PagedList<Pokemon>>{
+    fun getAll():LiveData<List<Pokemon>>{
         return pokemonDao.getAll()
     }
 

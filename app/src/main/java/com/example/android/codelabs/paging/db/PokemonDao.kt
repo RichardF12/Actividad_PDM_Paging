@@ -16,6 +16,6 @@ interface PokemonDao {
 
 
     @Query("SELECT * from pokemon_table")
-    fun getAll(): LiveData<PagedList<Pokemon>>
+    fun getAll(): LiveData<List<Pokemon>>
 
 }
